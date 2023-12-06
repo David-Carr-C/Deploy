@@ -1,0 +1,21 @@
+version: '3'
+services:
+  traefik:
+    image: traefik:alpine
+    labels:
+      - traefik.enable=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${PWD}/traefik.toml:/etc/traefik/traefik.toml
+      - ${PWD}/certs:/certs
+    restart: unless-stopped
+    ports:
+      - 80:80
+    networks:
+      traefik_n:
+networks:
+  traefik_n:
+    name: traefik_n
+    driver: bridge
+    ipam:
+      driver: default

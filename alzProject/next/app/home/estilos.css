@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Raleway:wght@100;300;400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --background-primary: #4B22F4;
+}
+
+body{
+    background-color: #FBFBFB;
+}
+
+.primer-block{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.primer-block h1{
+    font-size: 36px;
+}
+
+.primer-block h2{
+    font-weight: 600;
+}
+
+
+.parrafo-azul {
+    color: white;
+    background-color: var(--background-primary);
+    border-radius: 20px;
+    box-sizing: content-box;
+    padding: 6px;
+    font-family: var(--font-mono);
+    font-size: 26px;
+}
+
+.boton {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0 none;
+    font-size: 20px;
+    margin-top: 1.6rem;
+}
+
+form{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 50vw;
+}
+
+.segundo-bloque{
+    background-color: var(--background-primary);
+    color: #FBFBFB;
+    text-align: center;
+    box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.75);
+}
+
+.container_wave{
+    margin-top: 1em;
+    height: 150px;
+    overflow: hidden;
+}
+.container_wave>svg{
+    height: 100%; width: 100%;
+}
+
+.container_wave svg path{
+    stroke: none;
+    fill: var(--background-primary);
+}
+
+.segundo-bloque>hr{
+    text-align: center;
+    width: 30%;
+    margin: 1em auto;
+    border: none; 
+    height: 3px;
+    color: white;
+    background-color: white;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.izquierda, .derecha {
+    width: 50%; 
+    padding: 40px 20px; /* Añade relleno para espaciado interno */
+    text-align: left;
+}
+
+.izquierda h2{
+    font-size: 2.5rem;
+}
+
+/*Latest news*/
+.latest_news{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.latest_news>h2{
+    font-size: 2.5rem;
+}
+
+.latest_news>hr{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    border: none; 
+    height: 6px;
+    background-color: var(--background-primary);
+}
+
+.news_section{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.card{
+    text-align: start;
+    margin: 10px auto;
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    color: #FBFBFB;
+    background-color: var(--background-primary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
